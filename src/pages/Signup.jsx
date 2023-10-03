@@ -11,7 +11,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post("https://own-loginsignup-mern.onrender.com/signup", {
+      const response = await axios.post("https://own-loginsignup-mern.onrender.com/user/signup", {
         name,
         email,
         password,
