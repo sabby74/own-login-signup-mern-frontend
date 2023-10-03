@@ -8,7 +8,7 @@ function Login() {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
     axios
       .post("https://own-loginsignup-mern.onrender.com/login", {
@@ -28,7 +28,7 @@ function Login() {
     <div className="login">
       <div className="bg-yellow-200">
         <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleLogin}>
           <div className="bg-green-200">
             <label htmlFor="email">
               <strong>Email</strong>
