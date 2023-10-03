@@ -28,6 +28,7 @@ function Signup() {
   return (
     <div className="signup">
       <h2>Signup</h2>
+      <br />
       <input
         type="name"
         placeholder="name"
@@ -50,6 +51,7 @@ function Signup() {
       />
         <br />
       <button onClick={handleSignup}>Signup</button>
+      <br />
       <Link className="" to="/login">
         Login
       </Link>

@@ -27,11 +27,13 @@ function Login() {
 
     <div className="login">
     <h2>Login</h2>
+    <br />
     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
     <br />
     <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
     <br />
     <button onClick={handleLogin}>Login</button>
+    <br />
     <Link to="/signup">Signup</Link>
   </div>
 

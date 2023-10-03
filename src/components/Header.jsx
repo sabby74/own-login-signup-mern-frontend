@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <nav className="bg-slate-600 flex flex-row justify-around p-5 mb-6 " >
+    <nav className="bg-yellow-500 flex flex-row justify-around p-5 mb-6 rounded-lg " >
+      <h2> Cars Maintainance App :  Login Or Signup</h2>
       
         <Link className="hover:italic" to="/login">
           <div>Login</div>
@@ -18,9 +19,7 @@ const Header = () => {
         </Link> */}
      
       
-        <button className="hover:italic" onClick={() => navigate("/home")}>
-        Logout
-      </button>
+      
       </nav>
   )
 }
