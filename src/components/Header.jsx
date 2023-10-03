@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <nav className="bg-red-600 flex flex-row justify-around p-5 mb-6 " >
+    <nav className="bg-slate-600 flex flex-row justify-around p-5 mb-6 " >
       
         <Link className="hover:italic" to="/login">
           <div>Login</div>

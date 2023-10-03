@@ -12,8 +12,11 @@ function Login() {
   const handleLogin = async () => {
     try {
       const response = await axios.post('https://own-loginsignup-mern.onrender.com/login', { email, password });
-      console.log('Login Response:', response.data);
+      console.log('you are logged in :', response.data);
       console.log(response.data);
+      if (response.data === "you are logged in") {
+        navigate('/home');
+      }
     } catch (error) {
       console.error('Error during login:', error);
     }
