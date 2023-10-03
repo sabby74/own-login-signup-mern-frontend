@@ -7,40 +7,61 @@ function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-const navigate = useNavigate()
+  const navigate = useNavigate();
 
-
-const handleSignup = async () => {
+  const handleSignup = async () => {
     try {
-      const response = await axios.post('https://own-loginsignup-mern.onrender.com/signup', { name , email, password });
-      console.log('Signup Response:', response.data);
+      const response = await axios.post("https://own-loginsignup-mern.onrender.com/signup", {
+        name,
+        email,
+        password,
+      });
+      console.log("Signup Response:", response.data);
+      {
+        navigate("/home");
+      }
     } catch (error) {
-      console.error('Error during signup:', error);
+      console.error("Error during signup:", error);
     }
   };
-//   const handleSignup = (e) => {
-//     e.preventDefault()
-//     axios.post("https://own-loginsignup-mern.onrender.com/signup", {name , email , password})
-// .then (result => {console.log(result)
-//     navigate('/login')
+  //   const handleSignup = (e) => {
+  //     e.preventDefault()
+  //     axios.post("https://own-loginsignup-mern.onrender.com/signup", {name , email , password})
+  // .then (result => {console.log(result)
+  //     navigate('/login')
 
-// })
-//     .catch(err => console.log(err))
-//   }
+  // })
+  //     .catch(err => console.log(err))
+  //   }
   return (
-    <div>
-    <h2>Signup</h2>
-    <input type="name" placeholder="name" value={name} onChange={(e) => setName(e.target.value)} />
-    <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-    <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-    <button onClick={handleSignup}>Signup</button>
-    <Link
-          to="/login"
-          className=""
-        >
-          Login
-        </Link>
-  </div>
+    <div className="signup">
+      <h2>Signup</h2>
+      <input
+        type="name"
+        placeholder="name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <br />
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+        <br />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+        <br />
+      <button onClick={handleSignup}>Signup</button>
+      <Link className="" to="/login">
+        Login
+      </Link>
+    </div>
     // <div className="signup">
     //   <div className="">
     //     <h2>Signup</h2>
