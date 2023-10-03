@@ -15,7 +15,7 @@ function Login() {
       console.log('you are logged in :', response.data);
       console.log(response.data);
       if (response.data === "you are logged in") {
-        navigate('/home');
+        navigate('/index');
       }
     } catch (error) {
       console.error('Error during login:', error);
