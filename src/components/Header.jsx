@@ -13,9 +13,9 @@ const Header = () => {
         <Link className="hover:italic" to="/signup">
           <div>SignUp</div>
         </Link>
-        <Link className="hover:italic" to="/home">
+        {/* <Link className="hover:italic" to="/home">
           <div>Home</div>
-        </Link>
+        </Link> */}
      
       
         <button className="hover:italic" onClick={() => navigate("/home")}>
