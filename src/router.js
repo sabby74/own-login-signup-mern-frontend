@@ -10,7 +10,6 @@ import Home from "./pages/Home";
 import Update from "./pages/Update";
 import Show from "./pages/Show";
 import All from "./pages/All";
-// import Index from "./pages/Index";
 import { ServiceLoader, ShowLoader } from "./loaders";
 import { createAction, deleteAction, updateAction } from "./actions";
 
