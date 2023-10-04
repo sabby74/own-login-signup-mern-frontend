@@ -33,7 +33,7 @@ const Index = () => {
         <input type="checkbox" name="brakePadChange" value />
       </h1>
       <h1>
-        Tire Allignment : <input type="checkbox" name="alignment" value />
+        Wheel Allignment : <input type="checkbox" name="alignment" value />
       </h1>
       <h1>
         Transmission Oil Change:{" "}

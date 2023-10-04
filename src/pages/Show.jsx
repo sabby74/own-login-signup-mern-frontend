@@ -19,6 +19,7 @@ const Show = () => {
       <h3>Brake Check : {service.breakCheck ? "yes" : "No"}</h3>
       <h3>Battery Check : {service.batteryCheck ? "yes" : "No"}</h3>
       <h3>Brakes Pad Change : {service.brakePadChange ? "yes" : "No"}</h3>
+      <h3>Wheel Allignment : {service.alignment ? "yes" : "No"}</h3>
       <h3>Transmission Oil Change : {service.transmissionOilChange ? "yes" : "No"}</h3>
       <h3>Cabin Air Filter Change : {service.cabinAirFilterChange ? "yes" : "No"}</h3>
       <h3>Engine Air Filter Change : {service.engineAirFilter ? "yes" : "No"}</h3>

@@ -11,7 +11,7 @@ import Index from "./pages/Index";
 import Update from "./pages/Update";
 import Show from "./pages/Show";
 import { ServiceLoader, ShowLoader } from "./loaders";
-import { createAction, updateAction } from "./actions";
+import { createAction, deleteAction, updateAction } from "./actions";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route path=":id/edit" element={<Update />} loader={ShowLoader} />
       <Route path="create" action={createAction}/>
       <Route path="update/:id" action={updateAction}/>
-      <Route path="delete/:id" />
+      <Route path="delete/:id" action={deleteAction}/>
       
     </Route>
   )

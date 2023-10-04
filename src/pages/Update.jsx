@@ -93,7 +93,7 @@ const Update = () => {
             onChange={handleChange}
           />
           <br />
-          Tire Allignment:
+          Wheel Allignment:
           <input
             type="checkbox"
             checked={formData.alignment}

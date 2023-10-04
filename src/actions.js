@@ -70,3 +70,16 @@ export const updateAction = async ({ params,request }) => {
     return redirect(`/${params.id}`)
     
   };
+
+  export const deleteAction = async ({ params }) => {
+    console.log("delete action");
+    await fetch(URL + "/service/" +  params.id, {
+        method: "delete",
+        headers: {
+            "content-type": "application/json",
+        },
+        
+})
+// redirect to index
+return redirect("/service")
+}
