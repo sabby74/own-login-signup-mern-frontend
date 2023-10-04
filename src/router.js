@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Index from "./pages/Index";
 import Show from "./pages/Show";
 import { ServiceLoader, ShowLoader } from "./loaders";
+import { createAction } from "./actions";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="/home" element={<Home />} />
       <Route path="/service" element={<Index />} loader={ServiceLoader} />
       <Route path=":id" element={<Show />} loader={ShowLoader}/>
-      <Route path="create" />
+      <Route path="create" action={createAction}/>
       <Route path="update/:id" />
       <Route path="delete/:id" />
       
