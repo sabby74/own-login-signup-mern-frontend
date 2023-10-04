@@ -23,6 +23,16 @@
   border-radius: 15px;
   color: #656f83;
 }
+.show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  padding: 10px;
+  margin: 60px;
+  border-radius: 15px;
+}
 .create{
   display: flex;
   flex-direction: column;
@@ -32,6 +42,7 @@
   padding: 10px;
   margin: 60px;
   border-radius: 15px;
+  color: #656f83;
 }
 .login{
   display: flex;

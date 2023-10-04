@@ -1,4 +1,4 @@
-const URL = "http://own-loginsignup-mern.onrender.com"
+const URL = "https://own-loginsignup-mern.onrender.com"
 
 export const ServiceLoader = async () => {
     const res = await fetch(URL + "/service")
@@ -7,3 +7,11 @@ export const ServiceLoader = async () => {
     return service
   }
   
+
+
+  export const ShowLoader = async ({ params }) => {
+    console.log(params, "ShowLoader");
+    const res = await fetch(URL + "/service/" + params.id);
+    const service = await res.json();
+    return service;
+  };
