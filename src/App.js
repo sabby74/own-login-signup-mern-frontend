@@ -4,9 +4,11 @@ import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
-    <h1 className="bg-gray-400 h-16 m-3 pb-4 font-extrabold rounded-lg text-slate-600 items-center">
+    
+    <h1 className="m-3  font-extrabold  text-slate-700 ">
       <Header />
       <Outlet />
     </h1>
+  
   );
 }
