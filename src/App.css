@@ -44,18 +44,118 @@
   border-radius: 15px;
   color: #656f83;
 }
-.update{
+
+.update {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #282c34;
-  padding: 40px;
-  margin: 100px;
-  border-radius: 15px;
-  color: #626770
-
+  padding: 60px 80px;
+  margin: 50px auto;
+  border-radius: 20px;
+  color: #E1E1E1;
+  width: 80%;
+  max-width: 650px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.update h1 {
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.update input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;   
+  margin: 25px 0;       
+  border: 2px solid #626770;  
+  border-radius: 8px;   
+  background: transparent;
+  color: #E1E1E1;
+  font-size: 1.2rem;   
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.update input[type="text"]:focus {
+  border-color: #E1E1E1;
+  box-shadow: 0 0 12px rgba(225, 225, 225, 0.3);
+}
+
+.update input[type="text"]:hover {
+  border-color: #E1E1E1;
+}
+
+.update input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 25px 0;
+  border: 2px solid #626770;
+  border-radius: 6px;
+  background: transparent;
+  color: #E1E1E1;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  background-color: #626770;
+  font-weight: bold;
+}
+
+.update input[type="submit"]:hover {
+  background-color: #4a4f58;
+}
+
+.update input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.update label {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.update .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.sleek-input {
+  width: 100%;
+  padding: 16px 20px; 
+  margin: 30px 0;   
+  border: 2px solid #626770; 
+  border-radius: 10px; 
+  background: transparent;
+  color: #E1E1E1;
+  font-size: 1.2rem;  
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  outline: none;
+}
+
+.sleek-input:focus {
+  border-color: #E1E1E1;
+  box-shadow: 0 0 15px rgba(225, 225, 225, 0.4);
+}
+
+.sleek-input:hover {
+  border-color: #E1E1E1;
+  box-shadow: 0 0 8px rgba(225, 225, 225, 0.2);
+}
+
+
+
+
 .login{
   display: flex;
   flex-direction: column;

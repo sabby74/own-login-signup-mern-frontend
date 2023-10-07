@@ -10,9 +10,9 @@ const Show = () => {
         Service Details for {service.carName}
       </h1>
 
-      <div className="bg-blue-400 p-3 rounded mb-4">
+      <div className="bg-yellow-400 p-3 rounded mb-4">
         <h2 className="text-xl font-bold underline text-slate-700">
-          Cars name: {service.carName}
+          Car Name: {service.carName}
         </h2>
       </div>
 
@@ -23,40 +23,40 @@ const Show = () => {
       </div>
 
       <h2 className="text-2xl underline text-slate-300 mb-4">
-        Service Scheduled
+        Services Scheduled
       </h2>
 
       <div className="text-slate-300 space-y-2">
-        <h3>Oil Change : {service.oilChange ? "yes" : "No"}</h3>
-        <h3>Tire Rotation :{service.tireRotation ? "yes" : "No"}</h3>
-        <h3>Air Filter : {service.airFilter ? "yes" : "No"}</h3>
-        <h3>Brake Check : {service.breakCheck ? "yes" : "No"}</h3>
-        <h3>Battery Check : {service.batteryCheck ? "yes" : "No"}</h3>
-        <h3>Brakes Pad Change : {service.brakePadChange ? "yes" : "No"}</h3>
-        <h3>Wheel Allignment : {service.alignment ? "yes" : "No"}</h3>
+        <h3>Mileage : {service.mileage}</h3>
+        <h3>Oil Change : {service.oilChange ? "Yes" : "No"}</h3>
+        <h3>Tire Rotation :{service.tireRotation ? "Yes" : "No"}</h3>
+        <h3>Air Filter : {service.airFilter ? "Yes" : "No"}</h3>
+        <h3>Brake Check : {service.breakCheck ? "Yes" : "No"}</h3>
+        <h3>Battery Check : {service.batteryCheck ? "Yes" : "No"}</h3>
+        <h3>Brakes Pad Change : {service.brakePadChange ? "Yes" : "No"}</h3>
+        <h3>Wheel Allignment : {service.alignment ? "Yes" : "No"}</h3>
         <h3>
           Transmission Oil Change :{" "}
-          {service.transmissionOilChange ? "yes" : "No"}
+          {service.transmissionOilChange ? "Yes" : "No"}
         </h3>
         <h3>
           Cabin Air Filter Change :{" "}
-          {service.cabinAirFilterChange ? "yes" : "No"}
+          {service.cabinAirFilterChange ? "Yes" : "No"}
         </h3>
         <h3>
-          Engine Air Filter Change : {service.engineAirFilter ? "yes" : "No"}
+          Engine Air Filter Change : {service.engineAirFilter ? "Yes" : "No"}
         </h3>
         <h3>
-          Wiper Blades Change : {service.wiperBladesChange ? "yes" : "No"}
+          Wiper Blades Change : {service.wiperBladesChange ? "Yes" : "No"}
         </h3>
-        <h3>Mileage : {service.mileage}</h3>
-        <h3>Coolant Change or Topup: {service.coolantChange ? "yes" : "No"}</h3>
+        <h3>Coolant Change or Topup: {service.coolantChange ? "Yes" : "No"}</h3>
         <br />
       </div>
       <Link
         className="hover:italic hover:bg-green-500 transition duration-300 ease-in-out text-slate-700 bg-yellow-400 rounded px-4 py-2 inline-block"
         to="/service"
       >
-        Back To Cars service schedules
+        Back To Services
       </Link>
     </div>
   );

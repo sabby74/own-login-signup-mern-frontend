@@ -20,25 +20,36 @@ const Update = () => {
   return (
     <div className="update">
       <Form action={`/update/${service._id}`} method="post">
-        Cars Name:
-        <input
-          type="input"
-          name="carName"
-          value={formData.carName}
-          onChange={handleChange}
-          placeholder="car's Name"
-        />
-        <br />
-        Cars Model:
-        <input
-          type="input"
-          name="carModel"
-          value={formData.carModel}
-          onChange={handleChange}
-          placeholder="car's Model"
-        />
-        <br />
-   
+      Car Name:
+      <input
+        className="sleek-input" // Add this class
+        type="input"
+        name="carName"
+        value={formData.carName}
+        onChange={handleChange}
+        placeholder="car's Name"
+      />
+      <br />
+      Car Model:
+      <input
+        className="sleek-input" // Add this class
+        type="input"
+        name="carModel"
+        value={formData.carModel}
+        onChange={handleChange}
+        placeholder="car's Model"
+      />
+      <br />
+      Mileage:
+      <input
+        className="sleek-input" // Add this class
+        type="input"
+        name="mileage"
+        value={formData.mileage}
+        onChange={handleChange}
+        placeholder="mileage"
+      />
+      <br />
           Oil Change:
           <input
             type="checkbox"
@@ -93,7 +104,7 @@ const Update = () => {
             onChange={handleChange}
           />
           <br />
-          Wheel Allignment:
+          Wheel Alignment:
           <input
             type="checkbox"
             checked={formData.alignment}
@@ -138,15 +149,6 @@ const Update = () => {
             onChange={handleChange}
           />
           <br />
-          Mileage:
-          <input
-          type="input"
-          name="mileage"
-          value={formData.mileage}
-          onChange={handleChange}
-          placeholder="mileage"
-        />
-           <br />
            Coolant Change:
           <input
             type="checkbox"
@@ -160,7 +162,7 @@ const Update = () => {
         <input
           className="rounded-full p-2 bg-green-400"
           type="submit"
-          value={`update ${service.carName}`}
+          value={`Update ${service.carName}`}
         />
       </Form>
     </div>

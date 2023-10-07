@@ -28,15 +28,15 @@ function Signup() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h2 className="text-2xl font-semibold mb-4">Signup</h2>
+      <h2 className="text-4xl font-bold mb-6">Sign Up</h2>
 
-      <div className="w-72 bg-gray-500 p-4 shadow-md rounded-md">
+      <div className="w-96 bg-gray-500 p-6 shadow-lg rounded-md">
         <input
           type="text"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full px-2 py-1 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full px-3 py-2 text-lg mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <input
@@ -44,7 +44,7 @@ function Signup() {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-2 py-1 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full px-3 py-2 text-lg mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <input
@@ -52,20 +52,20 @@ function Signup() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full px-2 py-1 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full px-3 py-2 text-lg mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <button
           onClick={handleSignup}
-          className="w-full hover:italic hover:bg-green-500 transition duration-300 ease-in-out text-slate-700 bg-yellow-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full hover:italic hover:bg-green-500 transition duration-300 ease-in-out text-xl text-slate-700 bg-yellow-400 rounded px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
         >
-          Signup
+          Sign Up
         </button>
       </div>
 
       <Link
         to="/login"
-        className="mt-4 hover:italic hover:bg-green-500 transition duration-300 ease-in-out text-slate-700 bg-yellow-400 rounded px-4 py-2 inline-block"
+        className="mt-6 hover:italic hover:bg-green-500 transition duration-300 ease-in-out text-xl text-slate-700 bg-yellow-400 rounded px-5 py-3 inline-block"
       >
         Login
       </Link>

@@ -6,15 +6,15 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <nav className="bg-yellow-500 flex flex-row justify-around p-5 mb-6 rounded-lg " >
-      <h2> Cars Maintainance App</h2>
+      <h2> Cars Maintenance App</h2>
       
         <Link className="hover:italic" to="/login">
           <div>Login</div>
         </Link>
         <Link className="hover:italic" to="/signup">
-          <div>SignUp</div>
+          <div>Sign Up</div>
         </Link>
-        <button className="hover:italic" onClick={() => navigate("/")}>
+        <button className="hover:italic" onClick={() => navigate("/login")}>
         Logout
       </button>
      
